@@ -56,8 +56,8 @@ public class Deck {
         System.out.println("Quedan "+ myCards.size() + " en el deck");
     }
     public void hand(ArrayList<Card> userHand){
-        for (int i = 0; i<5; i++){
             userHand.removeAll(userHand);
+        for (int i = 0; i<5; i++){
             userHand.add(myCards.get(0));
             System.out.println(userHand.get(0));
             myCards.remove(0);
